@@ -13,8 +13,8 @@ class Leaderboard {
     localStorage.setItem('scoreBoard', JSON.stringify(this.scoreArray));
   }
 
-  addScore() {
-    const scores = { names, marks };
+  addScore(names, marks) {
+    const scores = { name: names.value, score: marks.value };
     this.scoreArray = [...this.scoreArray, scores];
     this.updateScore();
   }
@@ -30,3 +30,6 @@ const displayScore = (element) => {
   scoreTable.innerHTML = content;
 };
 displayScore();
+
+export default Leaderboard;
+export { displayScore };
