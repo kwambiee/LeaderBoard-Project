@@ -18,21 +18,17 @@
           <h2>Recent Scores</h2>
           <button type="button" class="refresh-button">Refresh</button>
         </div>
-        <div class="score-table">
+        <ul class="score-table">
 
-        </div>
-      </section>
-      <section>
+        </ul>
+      </section>      <section>
         <div class="add-score">
           <h2>Add your Score</h2>
-          <div>
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="Your score">
-          </div>
-          <div class="button">
-            <button type="submit" class="submit">Submit</button>
-          </div>
-          
+          <form class="form">
+            <input type="text" placeholder="Your name" name="names">
+            <input type="text" placeholder="Your score" name="marks">
+            <input type="submit" value="submit" class="submit">
+          </form>          
         </div>
       </section>
     </div>

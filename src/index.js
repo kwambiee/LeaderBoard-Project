@@ -1,15 +1,30 @@
 // css files here
 import './style.css';
-import Leaderboard, { displayScore } from './modules/addscore.js';
+import Leaderboard from './modules/addscore.js';
 import * as Element from './modules/elements.js';
 
 const newScore = new Leaderboard();
 
-Element.submitScore.addEventListener('submit', (e) => {
-  console.log(e.target);
-  e.preventDefault();
-  newScore.addScore(names, marks);
-  newScore.displayScore;
-});
+const displayScore = (scores) => {
+  let content = '';
+  scores.scoreArray.forEach((element) => {
+    content += `
+    <li>${element.nameInput}:${element.marksInput}</li>`;
+  });
+  Element.scoreTable.innerHTML = content;
+};
+displayScore(newScore);
 
-newScore.displayScore;
+Element.form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const nameInput = Element.form.elements.names.value;
+  const marksInput = Element.form.elements.marks.value;
+  if (nameInput && marksInput) {
+    newScore.addScore(nameInput, marksInput);
+    newScore.updateScore();
+    displayScore(newScore);
+    Element.form.elements.marks.value = '';
+    Element.form.elements.names.value = '';
+  }
+});
+displayScore(newScore);

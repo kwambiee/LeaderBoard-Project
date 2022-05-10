@@ -42,6 +42,7 @@ main {
 }
 .add-score {
   flex: 1;
+  width: 300px;
 }
 .add-score h2 {
   font-size: 2rem;
@@ -50,7 +51,7 @@ main {
 }
 .add-score input {
   padding: 7px;
-  width: 60%;
+  width: 100%;
   border: 2px solid black;
   margin: 1rem 0;
 }
@@ -61,10 +62,24 @@ input::-webkit-input-placeholder {
   display: flex;
   justify-content: center;
 }
-.add-score button {
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form .submit {
   padding: 0.5rem 1.2rem;
   font-size: 17px;
   border: 2px solid black;
   box-shadow: 5px 7px 5px rgba(0, 0, 0, 1);
   transition: box-shadow 0.2s;
+  width: 40%;
+  margin-left: auto;
+}
+
+.score-table li {
+  padding: 10px;
+  list-style: none;
+}
+.score-table li:nth-child(odd) {
+  background-color: grey;
 }
