@@ -1,3 +1,5 @@
+import { scoreTable } from './elements.js';
+
 class Leaderboard {
   constructor() {
     this.getScore();
@@ -17,3 +19,14 @@ class Leaderboard {
     this.updateScore();
   }
 }
+
+const displayScore = (element) => {
+  let content = '';
+  content += `
+<ul class="score-input">
+    <li>${element.names}:${element.marks}</li>
+</ul>
+`;
+  scoreTable.innerHTML = content;
+};
+displayScore();
