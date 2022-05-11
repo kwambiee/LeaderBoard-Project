@@ -1,9 +1,14 @@
 // css files here
 import './style.css';
 import Leaderboard from './modules/addscore.js';
+import postData from './modules/game.js';
 import * as Element from './modules/elements.js';
 
 const newScore = new Leaderboard();
+
+postData().then((data) => {
+  console.log(data);
+});
 
 const displayScore = (scores) => {
   let content = '';
