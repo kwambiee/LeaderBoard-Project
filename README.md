@@ -10,6 +10,7 @@
 - CSS
 - JavaScript (ES6)
 - Webpack
+- Gitflow
 
 ## Getting Started
 
