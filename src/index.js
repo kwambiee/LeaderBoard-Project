@@ -6,9 +6,16 @@ import * as Element from './modules/elements.js';
 
 const newScore = new Leaderboard();
 
-postData().then((data) => {
-  console.log(data);
-});
+const getData = async () => {
+  try {
+    let result = await postData();
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+getData();
 
 const displayScore = (scores) => {
   let content = '';
