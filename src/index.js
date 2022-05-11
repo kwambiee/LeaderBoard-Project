@@ -12,6 +12,6 @@ Element.form.addEventListener('submit', (e) => {
   const userscore = { user: `${nameInput}`, score: `${scoreInput}` };
 
   addScore(userscore).then(() => {
-    console.log(getScore());
+    getScore();
   });
 });

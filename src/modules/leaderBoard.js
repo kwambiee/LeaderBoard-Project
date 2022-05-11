@@ -1,7 +1,6 @@
 import { scoreTable } from './elements.js';
 
-const url =
-  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BQzGyizpa0M5oxSRbjoy/scores/';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BQzGyizpa0M5oxSRbjoy/scores/';
 
 async function addScore(userscore) {
   const request = await fetch(url, {
