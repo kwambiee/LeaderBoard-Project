@@ -1,6 +1,7 @@
 /* CSS */
 
 @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
 *,
 *::before,
 *::after {
@@ -14,7 +15,8 @@
 
 body {
   font-family: 'Gabriela', serif;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       rgba(129, 127, 241, 0.9),
       rgba(206, 145, 230, 0.7)
     ),
@@ -40,6 +42,7 @@ main {
 .title {
   margin-left: 2rem;
 }
+
 .title h1 {
   font-size: 3rem;
   font-weight: bolder;
@@ -65,13 +68,15 @@ main {
   border-radius: 25px;
   box-shadow: 5px 7px 5px rgba(0, 0, 0, 1);
   transition: box-shadow 0.5s;
-  background-image: linear-gradient(
-    to right,
-    #7474bf 0%,
-    #348ac7 51%,
-    #7474bf 100%
-  );
+  background-image:
+    linear-gradient(
+      to right,
+      #7474bf 0%,
+      #348ac7 51%,
+      #7474bf 100%
+    );
 }
+
 .refresh-button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
@@ -80,6 +85,8 @@ main {
   border: 2px solid black;
   width: 90%;
   margin-left: 1rem;
+  height: 300px;
+  overflow: auto;
 }
 
 .add-score {
@@ -128,21 +135,17 @@ input::-webkit-input-placeholder {
   width: 50%;
   cursor: pointer;
   margin-left: auto;
-  background-image: linear-gradient(
-    to right,
-    #dd5e89 0%,
-    #f7bb97 51%,
-    #dd5e89 100%
-  );
+  background-image:
+    linear-gradient(
+      to right,
+      #dd5e89 0%,
+      #f7bb97 51%,
+      #dd5e89 100%
+    );
 }
 
 .form .submit:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
-
-.score-table {
-  height: 300px;
-  overflow: auto;
 }
 
 .score-table li {
