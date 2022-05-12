@@ -12,6 +12,9 @@
 - Webpack
 - Gitflow
 
+## Live Demo
+[Link to the Website](https://kwambiee.github.io/LeaderBoard-Project/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
