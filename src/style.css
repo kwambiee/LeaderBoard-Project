@@ -22,6 +22,7 @@ body {
   -webkit-background-clip: text;
   background-repeat: no-repeat;
   background-size: cover;
+  max-height: 100vh;
 }
 
 main {
@@ -39,6 +40,10 @@ main {
 .title {
   margin-left: 2rem;
 }
+.title h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
 
 .recent-scores {
   display: flex;
@@ -47,6 +52,7 @@ main {
 
 .recent-scores h2 {
   padding-top: 10px;
+  font-size: 2rem;
 }
 
 .refresh-button {
@@ -142,8 +148,9 @@ input::-webkit-input-placeholder {
 .score-table li {
   padding: 10px;
   list-style: none;
+  color: #fff;
 }
 
 .score-table li:nth-child(odd) {
-  background-color: grey;
+  background-color: rgb(50, 59, 134);
 }
