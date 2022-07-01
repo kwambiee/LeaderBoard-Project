@@ -12,7 +12,12 @@
 - Webpack
 - Gitflow
 
+## Screenshots
+
+![leaderboard](/src/assets/leaderboard.png)
+
 ## Live Demo
+
 [Link to the Website](https://kwambiee.github.io/LeaderBoard-Project/)
 
 ## Getting Started
